@@ -1,0 +1,9 @@
+#Creates a custom ethic to unlock the advanced civics
+ethic_adv_civics = {
+	cost = 0
+	playable = no
+	use_for_pops = no
+	random_weight = {
+		value = 0
+	}
+}

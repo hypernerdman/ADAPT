@@ -1,0 +1,266 @@
+#Materialist Vigor
+civic_mat_vigor = {
+	pickable_at_start = no
+	modification = yes
+	
+	potential = {
+		ethics = {
+			value = ethic_adv_civics
+		}
+	}
+	possible = {
+
+		ethics = {
+			OR = {
+				value = ethic_fanatic_materialist
+				value = ethic_materialist
+			}
+		}
+	}
+
+	
+
+	modifier = {
+		all_technology_research_speed = 0.15
+		planet_pop_assembly_mult = 0.15
+	}	
+}
+
+#Spiritualist Vigor
+civic_spirit_vigor = {
+	pickable_at_start = no
+	modification = yes
+
+	potential = {
+		ethics = {
+			value = ethic_adv_civics
+		}
+	}
+	possible = {
+		ethics = {
+			OR = {
+				value = ethic_fanatic_spiritualist
+				value = ethic_spiritualist
+			}
+		}
+	}
+
+	modifier = {
+		country_unity_produces_mult = 0.15
+		pop_government_ethic_attraction = 0.15
+	}
+}
+
+#Authoritarian Vigor
+civic_auth_vigor = {
+	pickable_at_start = no
+	modification = yes
+
+	potential = {
+		ethics = {
+			value = ethic_adv_civics
+		}
+	}
+	possible = {
+		ethics = {
+			OR = {
+				value = ethic_fanatic_authoritarian
+				value = ethic_authoritarian
+			}
+		}
+	}
+
+	modifier = {
+		planet_stability_add = 10
+		pop_slave_resource_output = 0.1
+	}
+}
+
+#Egalitarian Vigor
+civic_egal_vigor = {
+	pickable_at_start = no
+	modification = yes
+
+	potential = {
+		ethics = {
+			value = ethic_adv_civics
+		}
+	}
+	possible = {
+		ethics = {
+			or = {
+				value = ethic_fanatic_egalitarian
+				value = ethic_egalitarian
+			}
+		}
+	}
+
+	modifier = {
+		planet_jobs_specialist_produces_mult = 0.1
+		pop_factions_influence_produces_mult = 0.25		
+	}
+}
+
+#Militarist Vigor
+civic_mil_vigor = {
+	pickable_at_start = no
+	modification = yes
+
+	potential = {
+		ethics = {
+			value = ethic_adv_civics
+		}
+	}
+	possible = {
+		ethics = {
+			or = {
+				value = ethic_fanatic_militarist
+				value = ethic_militarist
+			}
+		}
+	}
+
+	modifier = {
+		ship_fire_rate_mult = 0.1
+		country_claim_influence_cost_mult = -0.1		
+	}
+}
+
+#Pacifist Vigor
+civic_pac_vigor = {
+	pickable_at_start = no
+	modification = yes
+
+	potential = {
+		ethics = {
+			value = ethic_adv_civics
+		}
+	}
+	possible = {
+		ethics = {
+			or = {
+				value = ethic_fanatic_pacifist
+				value = ethic_pacifist
+			}
+		}
+	}
+
+	modifier = {
+		empire_size_pops_mult = -0.15
+		country_admin_cap_add = 50
+		country_admin_cap_mult = 0.2
+	}
+}
+
+#Xenophobe's Vigor
+civic_xenophobe_vigor = {
+	pickable_at_start = no
+	modification = yes
+
+	potential = {
+		ethics = {
+			value = ethic_adv_civics
+		}
+	}
+	possible = {
+		ethics = {
+			or = {
+				value = ethic_fanatic_xenophobe
+				value = ethic_xenophobe
+			}
+		}
+	}
+
+	modifier = {
+		pop_growth_speed = 0.1
+		pop_decline_speed = 2
+		country_starbase_influence_cost_mult = -0.1
+	}
+}
+
+#Xenophile's Vigor
+civic_xenophile_vigor = {
+	pickable_at_start = no
+	modification = yes
+
+	potential = {
+		ethics = {
+			value = ethic_adv_civics
+		}
+	}
+	possible = {
+		ethics = {
+			or = {
+				value = ethic_fanatic_xenophile
+				value = ethic_xenophile
+			}
+		}
+	}
+
+	modifier = {
+		diplo_weight_mult = 0.1
+		pop_growth_from_immigration = 0.2
+	}
+}
+
+#Rise of the Machines (Machine Intelligence)
+civic_rise_machines = {
+	pickable_at_start = no
+	modification = yes
+
+	potential = {
+		ethics = {
+			value = ethic_adv_civics
+		}
+		authority = {
+			value = auth_machine_intelligence
+		}
+	}
+
+	modifier = {
+		planet_amenities_mult = 0.2
+		country_alloys_produces_mult = 0.1
+	}
+}
+
+#We Are One! (Hive Mind)
+civic_we_are_one = {
+	pickable_at_start = no
+	modification = yes
+
+	potential = {
+		ethics = {
+			value = ethic_adv_civics
+		}
+		authority = { 
+			value = auth_hive_mind
+		}
+	}
+
+
+	modifier = {
+		planet_amenities_mult = 0.2
+		pop_growth_speed = 0.1
+	}
+}
+
+#Corporate Oversight (Megacorp)
+civic_corp_oversight = {
+	#pickable_at_start = no
+	modification = yes
+
+	potential = {
+		ethics = {
+			value = ethic_adv_civics
+		}
+		authority = {
+			value = auth_corporate
+		}
+	}
+
+
+	modifier = {
+		trade_value_mult = 0.2
+		country_consumer_goods_produces_mult = 0.1
+	}
+}
